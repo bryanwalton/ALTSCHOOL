@@ -1,0 +1,603 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto Mono;
+}
+
+body {
+  background-color: #c9b4b4;
+  background-size: cover;
+  margin: 0;
+  padding: 2.5em;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.img {
+  height: 40px;
+  border-radius: 50px;
+}
+
+.brand-name {
+  text-align: center;
+  margin: 0;
+  font-weight: normal;
+  color: white;
+}
+
+.brand-name-large {
+  font-size: 2rem;
+}
+
+.content-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.section-header {
+  font-family: Roboto Mono;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  border-bottom: 1px transparent;
+  padding: 2em;
+}
+
+.orange {
+  color: #ff8c00;
+}
+
+.pink {
+  color: #ff0080;
+}
+
+.green {
+  color: #32cd32;
+}
+
+.search-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-btn {
+  color: blue;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 40px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn i {
+  padding: 0.3rem;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: center;
+  padding: 0px;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 0px;
+}
+
+.search-box:hover > .search-text {
+  width: 550px;
+}
+
+::placeholder {
+  color: #ff0080;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.lo {
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.loo {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+}
+
+.loo:hover {
+  background-color: #008cba;
+  color: black;
+}
+
+.btn-center {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #32cd32;
+}
+
+.button1:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008cba;
+  margin-left: 50px;
+}
+
+.button2:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff4500;
+  margin-left: 50px;
+}
+
+.button3:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #ff0080;
+  margin-left: 50px;
+}
+
+.button4:hover {
+  background-color: #ff0080;
+}
+
+.don {
+  text-align: center;
+  justify-content: center;
+}
+
+.simply {
+  color: #008cba;
+  font-size: 2rem;
+}
+
+.diff {
+  font-size: 3rem;
+}
+.time {
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #4caf50;
+}
+
+.location {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: aliceblue;
+}
+
+.location a {
+  color: white;
+}
+.topdown {
+  text-align: center;
+}
+.topdown-down a {
+  color: black;
+}
+
+.lets {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.topnav-right a {
+  color: black;
+}
+/*HOME.............................................END*/
+
+/*CONTACT....................................STARTS*/
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+
+.contact .content p {
+  font-weight: 500;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+  color: black;
+}
+
+.contactForm {
+  width: 350px;
+  padding: 50px;
+  background: #fff;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  color: #ff4500;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox input textarea {
+  width: 100%;
+  padding: 5% 0;
+  margin: 10px0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 100px;
+  background: #008cba;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container .contactInfo {
+    width: 100%;
+  }
+}
+
+.regg {
+  font-size: 2em;
+}
+
+/*---------ABOUT-----------------------------*/
+
+.about-band-image {
+  float: left;
+  margin: 15px;
+  height: 400px;
+}
+
+.about {
+  text-align: center;
+  font-size: 30px;
+}
+
+.container {
+  width: 1000px;
+  height: 520px;
+  margin: 20px auto;
+}
+
+.calculator {
+  width: 320px;
+  height: 550px;
+  background-color: #eaedef;
+  margin: 0 auto;
+  top: 1px;
+  position: relative;
+  border-radius: 1rem;
+  box-shadow: 0 4px8px rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
+}
+
+.result {
+  height: 100px;
+}
+
+.histroy {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 20px;
+  font-size: 15px;
+  color: #919191;
+}
+
+.output {
+  text-align: right;
+  height: 60px;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.keyboard {
+  height: 400px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.number,
+.empty {
+  background-color: #eaedef;
+}
+
+.operator {
+  background-color: gray;
+}
+
+.number,
+.operator {
+  cursor: pointer;
+}
+
+.operator:active,
+.number:active {
+  font-size: 13px;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: 0;
+}
+
+.operator:nth-child(1) {
+  font-size: 20px;
+  background-color: darkgray;
+  color: black;
+}
+
+.operator:nth-child(2) {
+  font-size: 20px;
+  background-color: darkgray;
+  color: black;
+}
+
+.operator:nth-child(3) {
+  font-size: 20px;
+  background-color: darkgray;
+  color: black;
+}
+
+.operator:nth-child(4) {
+  font-size: 20px;
+  background-color: #ff8c00;
+  color: white;
+}
+
+.operator:nth-child(8) {
+  font-size: 20px;
+  background-color: #ff8c00;
+  color: white;
+}
+
+.operator:nth-child(12) {
+  font-size: 20px;
+  background-color: #ff8c00;
+  color: white;
+}
+
+.operator:nth-child(16) {
+  font-size: 20px;
+  background-color: #ff8c00;
+  color: white;
+}
+
+.operator:nth-child(20) {
+  font-size: 20px;
+  background-color: #ff8c00;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  border-spacing: 1em;
+  margin: 1rem auto;
+}
+
+td {
+  background: grey;
+}
+td,
+th {
+  padding: 1rem 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #a06b35;
+}
+
+#border-separate:checked ~ table {
+  border-collapse: separate;
+}
+
+#border-collapse:checked ~ table {
+  border-collapse: collapse;
+}
+
+.zero {
+  border-radius: 20px;
+}
+
+.head {
+  text-align: end;
+  font-size: 2em;
+}
+
+.btn {
+  background: grey;
+  color: white;
+}

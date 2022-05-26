@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="main-header-1" id="myHeader">
+      <nav>
+        <div class="topnav">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="register.html">Register</a>
+          <a href="login.html">Login</a>
+
+          <a href="flex.html">Calculator</a>
+          <div class="topnav-right">
+            <a href="https://twitter.com/michaelagbiaow2" target="_blank"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a href="https://github.com/bryanwalton" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/maiempire/" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="#"><img class="img" src="image.jpg" alt="" /></a>
+          </div>
+        </div>
+      </nav>
+      <h1 class="brand-name brand-name-large">Welcome To Maiempire</h1>
+    </header>
+    <h1>Calculator using CSS Flexbox</h1>
+    <div class="container">
+      <div class="calculator">
+        <div class="result">
+          <div class="history">
+            <p id="histroy-value"></p>
+          </div>
+          <div class="output">
+            <p id="output-value"></p>
+          </div>
+        </div>
+        <div class="keyboard">
+          <!--FIRST ROW OF BUTTONS-->
+          <button class="operator" id="clear">AC</button>
+          <button class="operator" id="clear">+/-</button>
+          <button class="operator" id="clear">%</button>
+          <button class="operator" id="clear">÷</button>
+
+          <!--SECOND ROW OF BUTTONS-->
+          <button class="number" id="clear">7</button>
+          <button class="number" id="clear">8</button>
+          <button class="number" id="clear">9</button>
+          <button class="operator" id="clear">x</button>
+
+          <!--THIRD ROW OF BUTTONS-->
+          <button class="number" id="clear">4</button>
+          <button class="number" id="clear">5</button>
+          <button class="number" id="clear">6</button>
+          <button class="operator" id="clear">-</button>
+
+          <!--FORTH ROW OF BUTTONS-->
+          <button class="number" id="clear">1</button>
+          <button class="number" id="clear">2</button>
+          <button class="number" id="clear">3</button>
+          <button class="operator" id="clear">+</button>
+
+          <!--FIFTH ROW OF BUTTONS-->
+          <div class="row">
+            <button class="number" id="clear">00</button>
+            <button class="number" id="clear">0</button>
+            <button class="number" id="clear">.</button>
+            <button class="operator" id="clear">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
